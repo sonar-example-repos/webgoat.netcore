@@ -1,36 +1,71 @@
-# WebGoat.NET version 0.3
+# dotTEST WebGoat.NET Example
 
-## Build status
+This example shows the following dotTEST capabilities:
+
+- static analysis and flow analysis capabilities
+- integration with GitHub pipelines via [Run dotTEST Action](https://github.com/parasoft/run-dottest-action)
+- integration with Aider to perform static analysis fixes in GitHub pipelines (dotTEST Autofix feature)
+
+## Table of contents
+
+- [dotTEST capabilities](#dotTEST-capabilities)
+- [WebGoat.NET](#WebGoat.NET-version-0.3)
+
+## dotTEST capabilities
+
+### Static Analysis
+
+TODO: Shortly describe static/Flow Analysis
+TODO: Add link to official dotTEST documentation 
+
+### Run dotTEST GitHub Action
+
+TODO: Describe shortly the capabilities of the dotTEST Action
+TODO: Prepare shot yaml example / add link to example
+
+[Run dotTEST Action project](https://github.com/parasoft/run-dottest-action)
+[Run dotTEST Action @ GitHub Marketplace](https://github.com/marketplace/actions/run-parasoft-dottest)
+
+
+### Autofix in CI/CD with Aider
+
+TODO: Describe shortly what is the Autofix feature
+TODO: Add short yaml script snippet
+TODO: Add link to official documentation describing this feature
+
+## WebGoat.NET version 0.3
+
+### Build status
 
 ![build .NET 8](https://github.com/tobyash86/WebGoat.NET/workflows/build%20.NET%208/badge.svg)
 
-## The next generation of the WebGoat example project to demonstrate OWASP TOP 10 vulnerabilities
+### The next generation of the WebGoat example project to demonstrate OWASP TOP 10 vulnerabilities
 
 This is a re-implementation of the original [WebGoat project for .NET](https://github.com/rappayne/WebGoat.NET).
 
 This web application is a learning platform that attempts to teach about
 common web security flaws. It contains generic security flaws that apply to
-most web applications. It also contains lessons that specifically pertain to
+most web applications. It also includes lessons that specifically pertain to
 the .NET framework. The exercises in this app are intended to teach about 
 web security attacks and how developers can overcome them.
 
-### WARNING!: 
+#### WARNING!: 
 THIS WEB APPLICATION CONTAINS NUMEROUS SECURITY VULNERABILITIES 
 WHICH WILL RENDER YOUR COMPUTER VERY INSECURE WHILE RUNNING! IT IS HIGHLY
 RECOMMENDED TO COMPLETELY DISCONNECT YOUR COMPUTER FROM ALL NETWORKS WHILE
 RUNNING!
 
-### Notes:
+#### Notes:
  - Google Chrome performs filtering for reflected XSS attacks. These attacks
-   will not work unless chrome is run with the argument 
+   will not work unless Chrome is run with the argument 
    `--disable-xss-auditor`.
 
-## Requirements
+### Requirements
 - .NET 8 SDK
 
-## How to build and run
+### How to build and run
 
-### 1. Running in a Docker container
+#### 1. Running in a Docker container
 
 The provided Dockerfile is compatible with both Linux and Windows containers.  
 To build a Docker image, execute the following command:
@@ -39,9 +74,9 @@ To build a Docker image, execute the following command:
 docker build --pull --rm -t webgoat.net .
 ```
 
-Please note that Linux image is already built by pipeline and can be pulled from [here](https://github.com/users/tobyash86/packages?repo_name=WebGoat.NET).
+Please note that the Linux image is already built by the pipeline and can be pulled from [here](https://github.com/users/tobyash86/packages?repo_name=WebGoat.NET).
 
-#### Linux containers
+##### Linux containers
 
 To run the `webgoat.net` image, execute the following command:
 
@@ -49,9 +84,9 @@ To run the `webgoat.net` image, execute the following command:
 docker run --rm -d -p 5000:80 --name webgoat.net webgoat.net
 ```
 
-WebGoat.NET website should be accessible at http://localhost:5000.
+The WebGoat.NET website should be accessible at http://localhost:5000.
 
-#### Windows containers
+##### Windows containers
 
 To run `webgoat.net` image, execute the following command:
 
@@ -78,7 +113,7 @@ Ethernet adapter Ethernet:
 
 In the above example, you can access the WebGoat.NETCore website at http://172.29.245.43.
 
-#### Stopping Docker container
+##### Stopping Docker container
 
 To stop the `webgoat.net` container, execute the following command:
 
@@ -86,7 +121,7 @@ To stop the `webgoat.net` container, execute the following command:
 docker stop webgoat.net
 ```
 
-### 2. Run locally using dotnet.exe (Kestrel)
+#### 2. Run locally using dotnet.exe (Kestrel)
 
 1. Build and publish WebGoat.NET with the following command:
 
@@ -102,18 +137,19 @@ The web application will be deployed to the `app` folder in the current director
 dotnet ./app/WebGoat.NET.dll --urls=http://localhost:5000
 ```
 
-The the WebGoat.NET website will be accessible at the URL specified with the `--urls` parameter: http://localhost:5000.
+The WebGoat.NET website will be accessible at the URL specified with the `--urls` parameter: http://localhost:5000.
 
-### 3. Run using a script
-The WebGoat.NET projects ships with scripts that allow you to conveniently run the web application. The following scripts are located in the the "script" directory in the root of the project:
+#### 3. Run using a script
+The WebGoat.NET project ships with scripts that allow you to conveniently run the web application. The following scripts are located in the "script" directory in the root of the project:
 - runInDocker.bat - Runs the application in a Docker container on Windows.
 - runInDocker.sh - Runs the application in a Docker container on Linux.
 - runLocal.bat - Runs the application locally on Windows.
 - runLocal.sh - Runs the application locally on Linux.
 
-## Known issues:
+### Known issues:
 
 1. The latest OWASP Top 10 is not covered. The uncovered vulnerabilities need to be added to the code base.
 2. Educational documents/trainings for any categories of the latest OWASP Top 10 are not available.
+
 
 

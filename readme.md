@@ -9,7 +9,7 @@ This example shows the following dotTEST capabilities:
 ## Table of contents
 
 - [dotTEST capabilities](#dotTEST-capabilities)
-- [WebGoat.NET](#WebGoat.NET-version-03)
+- [WebGoat.NET](#WebGoatNET-version-03)
 
 ## dotTEST capabilities
 
@@ -150,6 +150,7 @@ The WebGoat.NET project ships with scripts that allow you to conveniently run th
 
 1. The latest OWASP Top 10 is not covered. The uncovered vulnerabilities need to be added to the code base.
 2. Educational documents/trainings for any categories of the latest OWASP Top 10 are not available.
+
 
 
 

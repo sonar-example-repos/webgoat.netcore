@@ -28,7 +28,7 @@ See also [Run dotTEST Action project](https://github.com/parasoft/run-dottest-ac
 
 ### Autofix in CI/CD Using Aider
 
-`DottestAutoFix` is a Python-based script that leverages AI-powered code analysis to automatically fix dotTEST violations in your .NET projects, based on a generated analysis report. Once a fix is applied, the plugin validates it using `dottestcli` and then creates a pull request in your project repository.
+`DottestAutoFix` is a Python-based script that leverages AI-powered code analysis to automatically fix dotTEST violations in your .NET projects, based on a generated analysis report. Once a fix is applied, the plugin validates it using `dottestcli` and then adds a commit to the current branch in your project repository.
 The following example shows a simple Autofix execution:
 ```batch
 @REM Execute autofix with recommended settings
@@ -158,6 +158,7 @@ The WebGoat.NET project ships with scripts that allow you to conveniently run th
 
 1. The latest OWASP Top 10 is not covered. The missing vulnerabilities need to be added to the codebase.
 2. Educational documents and training materials for any categories of the latest OWASP Top 10 are not available.
+
 
 
 

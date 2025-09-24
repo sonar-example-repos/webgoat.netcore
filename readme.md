@@ -15,14 +15,12 @@ This example shows the following dotTEST capabilities:
 
 ### Static Analysis
 
-Static analysis and flow analysis help you verify code quality and ensure compliance with industry standards, such as CWE or OWASP. Static analysis is a software testing method done by examining the source code without executing it to detect errors, vulnerabilities, and violations of coding standards. Flow analysis refers to the examination and evaluation of data or control flow within a program or system to identify potential issues such as resource leaks, dead code, security vulnerabilities, or performance bottlenecks. 
-See [Parasoft dotTEST User Guide](https://docs.parasoft.com/display/DOTTEST20251) for details regarding static and flow analysis with dotTEST as well as other dotTEST capabilities.
+Static analysis and flow analysis help you verify code quality and ensure compliance with industry standards, such as CWE or OWASP. Static analysis is a software testing method that examines the source code without executing it to detect errors, vulnerabilities, and violations of coding standards. Flow analysis refers to the examination and evaluation of data or control flow within a program or system to identify potential issues such as resource leaks, dead code, security vulnerabilities, or performance bottlenecks. 
+See [Parasoft dotTEST User Guide](https://docs.parasoft.com/display/DOTTEST20252) for details regarding static and flow analysis with dotTEST as well as other dotTEST capabilities.
 
 ### Run Parasoft dotTEST GitHub Action
 
-The `Run Parasoft dotTEST` action enables you to run code analysis with dotTEST and review analysis results directly on GitHub. To launch code analysis with dotTEST, add the `Run Parasoft dotTEST` action to your GitHub workflow. The following example shows a simple workflow made up of one job "run-dottest-action": 
-
-TODO: Prepare shot yaml example / add link to example
+The `Run Parasoft dotTEST` action enables you to run code analysis with dotTEST and review analysis results directly on GitHub. To launch code analysis with dotTEST, add the `Run Parasoft dotTEST` action to your GitHub workflow. [The example](https://github.com/parasoft/run-dottest-action/blob/master/samples/run-dottest-analyzer-template.yml) illustrates a simple workflow consisting of one job "run-dottest-action".
 
 See [Run dotTEST Action @ GitHub Marketplace](https://github.com/marketplace/actions/run-parasoft-dottest) for details regarding configuration and usage.
 See also [Run dotTEST Action project](https://github.com/parasoft/run-dottest-action).
@@ -31,7 +29,7 @@ See also [Run dotTEST Action project](https://github.com/parasoft/run-dottest-ac
 ### Autofix in CI/CD Using Aider
 
 `DottestAutoFix` is a Python-based script that leverages AI-powered code analysis to automatically fix dotTEST violations in your .NET projects, based on a generated analysis report. Once a fix is applied, the plugin validates it using `dottestcli` and then creates a pull request in your project repository.
-The following example shows simple Autofix execution:
+The following example shows a simple Autofix execution:
 ```batch
 @REM Execute autofix with recommended settings
 python DottestAutoFix.py ^
@@ -41,7 +39,7 @@ python DottestAutoFix.py ^
  --tool-home "C:\Program Files\Parasoft\dotTEST\2025.2"
 ```
 
-See **LINK** for details regarding Autofix configuration and usage.
+See [**LINK**](https://docs.parasoft.com/display/DOTTEST20252/Fixing+Violations+Using+Autofix) for details regarding Autofix configuration and usage.
 TODO: Add link to official documentation describing this feature
 
 ## WebGoat.NET version 0.3
@@ -160,6 +158,8 @@ The WebGoat.NET project ships with scripts that allow you to conveniently run th
 
 1. The latest OWASP Top 10 is not covered. The missing vulnerabilities need to be added to the codebase.
 2. Educational documents and training materials for any categories of the latest OWASP Top 10 are not available.
+
+
 
 
 

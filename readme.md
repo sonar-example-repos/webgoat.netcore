@@ -39,8 +39,7 @@ python DottestAutoFix.py ^
  --tool-home "C:\Program Files\Parasoft\dotTEST\2025.2"
 ```
 
-See [**LINK**](https://docs.parasoft.com/display/DOTTEST20252/Fixing+Violations+Using+Autofix) for details regarding Autofix configuration and usage.
-TODO: Add link to official documentation describing this feature
+See [**LINK**](https://docs.parasoft.com/display/DOTTEST20252/Fixing+Violations+Using+AI+Autofix) for details regarding Autofix configuration and usage.
 
 ## WebGoat.NET version 0.3
 
@@ -158,6 +157,7 @@ The WebGoat.NET project ships with scripts that allow you to conveniently run th
 
 1. The latest OWASP Top 10 is not covered. The missing vulnerabilities need to be added to the codebase.
 2. Educational documents and training materials for any categories of the latest OWASP Top 10 are not available.
+
 
 
 

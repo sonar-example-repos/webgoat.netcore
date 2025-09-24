@@ -16,7 +16,7 @@ This example shows the following dotTEST capabilities:
 ### Static Analysis
 
 Static analysis and flow analysis help you verify code quality and ensure compliance with industry standards, such as CWE or OWASP. Static analysis is a software testing method that examines the source code without executing it to detect errors, vulnerabilities, and violations of coding standards. Flow analysis refers to the examination and evaluation of data or control flow within a program or system to identify potential issues such as resource leaks, dead code, security vulnerabilities, or performance bottlenecks. 
-See [Parasoft dotTEST User Guide](https://docs.parasoft.com/display/DOTTEST20251) for details regarding static and flow analysis with dotTEST as well as other dotTEST capabilities.
+See [Parasoft dotTEST User Guide](https://docs.parasoft.com/display/DOTTEST20252) for details regarding static and flow analysis with dotTEST as well as other dotTEST capabilities.
 
 ### Run Parasoft dotTEST GitHub Action
 
@@ -158,6 +158,7 @@ The WebGoat.NET project ships with scripts that allow you to conveniently run th
 
 1. The latest OWASP Top 10 is not covered. The missing vulnerabilities need to be added to the codebase.
 2. Educational documents and training materials for any categories of the latest OWASP Top 10 are not available.
+
 
 
 

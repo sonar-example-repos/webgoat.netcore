@@ -6,6 +6,7 @@ using WebGoatCore.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using WebGoatCore.Models;
 
+
 namespace WebGoatCore.Controllers
 {
     [Authorize]
@@ -225,7 +226,7 @@ namespace WebGoatCore.Controllers
                 {
                     if (model.MakeNewUserAdmin)
                     {
-                        // TODO: role should be Admin?
+                        // TODO: should role of the user granting admin role should be Admin as well?
                         result = await _userManager.AddToRoleAsync(user, "admin");
                         if (!result.Succeeded)
                         {
